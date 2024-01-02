@@ -1,0 +1,44 @@
+body { width: 960px; margin: 0 auto; }
+
+.parent {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+.square {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    border-style: dashed;
+    border-width: 3px;
+    width: fit-content;
+}
+.victory {
+
+    float: none;
+    display: block;
+}
+
+.tile {
+    margin: 1px;
+}
+
+div {
+    float: left;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(88, 84, 84);
+    margin-bottom: 2px;
+    font-size: smaller;
+ }
+
+ .footer > p {
+    margin: 2px;
+ }

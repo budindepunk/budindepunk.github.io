@@ -1,0 +1,48 @@
+window.addEventListener("load", function(){
+    main()
+});
+
+let files = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let parts = ["TL", "TM", "TR", "ML", "MM", "MR", "BL", "BM", "BR"];
+
+function main() {
+    
+    let order = arrange_pieces();
+    while (check_solvable(order) !== 0) {
+        console.log("not");
+        order = arrange_pieces();
+    }
+        
+    function arrange_pieces() {
+        let chosen_order =[];
+        let files_copy = files.slice();
+        files_copy[files_copy.length-1] = 0;
+        for (let part of parts) {
+            let part_element = document.getElementById(part);
+            let chosen_index = get_random(files_copy);
+            part_element.setAttribute("src", files_copy[chosen_index].toString() +".png");
+            chosen_order.push(files_copy[chosen_index]);
+            files_copy.splice(chosen_index, 1);
+        }
+        return chosen_order;
+    }
+
+    function get_random(list) {
+        let chosen_index = Math.floor(Math.random()*list.length);
+        return chosen_index;
+    }
+ 
+    function check_solvable(order) {
+        // checks if arrangement is solvable
+        // if the count is even it is solvable, if it is not, it is not
+        count = 0;
+        for (let i = 0; i < order.length - 1; i++) {
+            for (let j = i+1; j < order.length; j++) {
+                if ((order[j] !== 0) && (order[i] !== 0) && (order[i] > order[j])) {
+                    count++;
+                }
+            }
+        }
+        return count % 2;
+    } 
+}
