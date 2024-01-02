@@ -1,4 +1,7 @@
-body { width: 960px; margin: 0 auto; }
+body { 
+    max-width: 500px;
+    margin: auto;
+}
 
 .parent {
 	position: relative;
@@ -35,7 +38,7 @@ div {
     bottom: 0;
     width: 100%;
     color: rgb(88, 84, 84);
-    margin-bottom: 2px;
+    margin-bottom: 100px;
     font-size: smaller;
  }
 
