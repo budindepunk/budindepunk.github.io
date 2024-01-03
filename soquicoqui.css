@@ -1,6 +1,7 @@
 body { 
     max-width: 500px;
     margin: auto;
+    margin-left: 10px;
 }
 
 .parent {
@@ -38,7 +39,7 @@ div {
     bottom: 0;
     width: 100%;
     color: rgb(88, 84, 84);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: smaller;
  }
 

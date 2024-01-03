@@ -1,2 +1,10 @@
-https://datawookie.dev/blog/2019/04/sliding-puzzle-solvable/
+We mostly made this game to see if we could :)
+We wanted to do it absolutely from scratch and using the least amount of stuff possible, and neither of us had used a lot of JavaScript before.
 
+The little piece of code that determines if an arrangement is solvable was written adapting what we found here:
+https://datawookie.dev/blog/2019/04/sliding-puzzle-solvable/
+and of course we googled a lot.
+
+We'll figure out how to improve it, maybe.
+But now the holidays are over and we're back to work.
+Happy new year!
